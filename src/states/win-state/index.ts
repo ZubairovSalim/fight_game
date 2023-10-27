@@ -1,0 +1,1 @@
+export {WinState} from './win';

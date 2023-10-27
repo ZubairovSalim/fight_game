@@ -1,0 +1,1 @@
+export {LoseState} from './lose';
