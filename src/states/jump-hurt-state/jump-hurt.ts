@@ -21,11 +21,11 @@ export class JumpHurtState extends State {
     }
 
     init() {
+        this.isFinalState = false;
         const sign = this.fighter.velocity.x * -1 > 0 ? 1 : -1;
         this.fighter.velocity.x = this.fighter.DEFAULT.VELOCITY.X[States.JUMP_HURT] * sign;
         this.fighter.velocity.y = this.fighter.DEFAULT.VELOCITY.Y[States.JUMP_HURT];
         this.fighter.health -= 20;
-
     }
 
     update(time: FrameTime) {

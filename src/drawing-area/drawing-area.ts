@@ -45,7 +45,7 @@ export class DrawingArea {
             obj.position.x - camera.position.x,
             STAGE_FLOOR - 4,
             4,
-            (30 - (STAGE_FLOOR - obj.position.y) / 10),
+            Math.max((30 - (STAGE_FLOOR - obj.position.y) / 10), 0),
             Math.PI / 2,
             0, 2 *
             Math.PI);
